@@ -24,15 +24,14 @@ app.use(cors());
 let latitude = 21.245990;
 let longitude = 81.389395;
 
-const latitudeIncrement = 0.00001; // Change in latitude per step
-const longitudeIncrement = 0.00001; // Change in longitude per step
-
+const latitudeIncrement = 0.00001; 
+const longitudeIncrement = 0.00001; 
 const generateRandomLocation = () => {
-    // Simulate a location change in a straight line
+    
     latitude += latitudeIncrement;
     longitude += longitudeIncrement;
     
-    // Create a location object
+    
     return {
         latitude: latitude.toFixed(6),
         longitude: longitude.toFixed(6),
