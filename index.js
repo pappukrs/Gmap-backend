@@ -12,9 +12,15 @@ const io = socketIo(server, {
     }
 });
 
+
+
 const PORT = 3000;
 
 app.use(cors());
+
+app.get("/",(req,res)=>{
+ res.json({"msg":"Welcome to Alka World"})
+})
 
 // // Initial location and direction
 // let latitude = 17.385044;
